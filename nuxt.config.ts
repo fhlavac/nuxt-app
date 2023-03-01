@@ -1,8 +1,13 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-// nuxt.config.ts
 import vuetify from "vite-plugin-vuetify";
 
 export default defineNuxtConfig({
+  components: [
+    {
+      path: "~/components",
+      pathPrefix: false,
+    },
+  ],
   app: {
     head: {
       charset: "utf-16",
