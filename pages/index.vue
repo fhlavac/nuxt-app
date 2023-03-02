@@ -1,9 +1,10 @@
 <template>
   <v-app class="app">
-    <v-app-bar fixed app class="bar">
+    <v-app-bar fixed app style="background-color: #898121">
       <!--<v-app-bar-nav-icon /> -->
       <NuxtLink to="/" class="mx-6" style="text-decoration: none">
-        My Hackathon app<!--<img alt="logo" /> -->
+        <div class="title">My Hackathon app</div>
+        <!--<img alt="logo" /> -->
       </NuxtLink>
       <v-spacer />
       <div class="mr-4">
@@ -13,7 +14,7 @@
           icon
           :href="item.url"
         >
-          <v-icon>{{ item.icon }}</v-icon>
+          <v-icon color="white">{{ item.icon }}</v-icon>
         </v-btn>
       </div>
     </v-app-bar>
@@ -72,8 +73,9 @@ const route = useRoute();
   background-color: #f7f1e5;
 }
 
-.bar {
-  width: 100%;
-  background-color: #e7b10a;
+.title {
+  font-size: large;
+  font-weight: 800;
+  color: white;
 }
 </style>

@@ -9,7 +9,7 @@
           icon
           :href="item.url"
         >
-          <v-icon>{{ item.icon }}</v-icon>
+          <v-icon color="#4c4b16">{{ item.icon }}</v-icon>
         </v-btn>
       </v-card-text>
 
