@@ -1,12 +1,8 @@
 <template>
-  <v-app dark>
-    <!-- <h1 v-if="error.statusCode === 404" class="my-4">
-      {{ pageNotFound }}
-    </h1> -->
-    <h1 class="my-4">
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/"> Main page </NuxtLink>
+  <v-app class="ma-12">
+    <h1 class="my-4">...And that's how the fallback error page looks like.</h1>
+    <h1 class="mb-12">Sorry :-(</h1>
+    <NuxtLink to="/">Back to the main page</NuxtLink>
   </v-app>
 </template>
 

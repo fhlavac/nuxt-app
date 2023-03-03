@@ -1,9 +1,9 @@
 <template>
   <v-app class="app">
-    <v-app-bar fixed app style="background-color: #898121">
+    <v-app-bar fixed app>
       <!--<v-app-bar-nav-icon /> -->
       <NuxtLink to="/" class="mx-6" style="text-decoration: none">
-        <div class="title">My Hackathon app</div>
+        <h3 class="logo">My Sample App</h3>
         <!--<img alt="logo" /> -->
       </NuxtLink>
       <v-spacer />
@@ -12,13 +12,14 @@
           v-for="(item, i) in media"
           :key="`media-${i}`"
           icon
+          color="primary"
           :href="item.url"
         >
-          <v-icon color="white">{{ item.icon }}</v-icon>
+          <v-icon>{{ item.icon }}</v-icon>
         </v-btn>
       </div>
     </v-app-bar>
-    <v-navigation-drawer style="background-color: #cfcfcf">
+    <v-navigation-drawer>
       <v-list>
         <v-list-item
           v-for="(item, i) in navigation"
@@ -30,9 +31,7 @@
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
-          <v-list-item-content>
-            {{ item.title }}
-          </v-list-item-content>
+          {{ item.title }}
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -69,13 +68,7 @@ const route = useRoute();
 </script>
 
 <style>
-.app {
-  background-color: #f7f1e5;
-}
-
-.title {
-  font-size: large;
-  font-weight: 800;
-  color: white;
+.logo {
+  font-family: "RalewayMedium";
 }
 </style>
