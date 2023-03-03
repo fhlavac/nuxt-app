@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "FujiyamaExtraBold";
+  src: local("FujiyamaExtraBold"),
+  url(../assets/fonts/fujiyama/fujiyama-extra-bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Fujiyama";
+  src: local("Fujiyama"),
+  url(../assets/fonts/fujiyama/fujiyama-regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "RalewayMedium";
+  src: local("RalewayMedium"),
+  url(../assets/fonts/raleway/raleway-medium.ttf) format("truetype");
+}
+
+p, ul, li, div, span, .text-link {
+  font-family: 'RalewayMedium';
+}
+
+a {
+  color: #006F3F;
+}
+
+h2, h3 {
+  color: black;
+  font-family: 'Fujiyama';
+}
+
+.primary {
+  color: #006F3F;
+}
+
+p, ul, li, .text-link {
+  font-size: 15px;  // default font-size
+}
+
+.v-breadcrumbs li {
+  padding: 0 !important;  // smaller padding between breadcrumbs breadcrumbs
+}
+
+.v-tabs-slider-wrapper {
+  top: 0;  // moves tab slider up
+}
+
+a {
+  text-decoration: none;
+}

@@ -19,7 +19,11 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ["vuetify/styles", "@mdi/font/css/materialdesignicons.min.css"],
+  css: [
+    "vuetify/styles",
+    "~/assets/main.scss",
+    "@mdi/font/css/materialdesignicons.min.css",
+  ],
   vite: {
     ssr: {
       noExternal: ["vuetify"], // add the vuetify vite plugin
