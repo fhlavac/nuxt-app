@@ -19,7 +19,7 @@
 
       <v-divider></v-divider>
 
-      <v-card-text class="ctu-grey-dark-3 white--text">
+      <v-card-text class="grey-dark-3 white--text">
         &copy; {{ new Date().getFullYear() }}&nbsp;&nbsp;|&nbsp;&nbsp;<strong
           >ConsoleDot Hackathon Q1-23</strong
         >
