@@ -3,8 +3,8 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({ title: 'Residence' });
+definePageMeta({ title: 'About' });
 useHead({
-  title: 'Residence'
+  title: 'About'
 })
 </script>

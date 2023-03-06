@@ -1,7 +1,9 @@
 <template>
   <Section>
-    <v-container fluid>
-      <v-layout wrap>
+    <SectionHeader class="mb-6" title="Welcome to the best Nuxt.js 3 app in the world!"/>
+    <p class="mb-4">Select section from our nav:</p>
+    <v-container class="pa-0" fluid>
+      <v-layout wrap >
         <v-card
           v-for="(item, i) in menu"
           :key="`index-item-${i}`"
@@ -27,6 +29,8 @@
 
 <script setup lang="ts">
 import { navigation } from "../data/navigation";
+useHead({title: 'Main page'})
+
 const menu = navigation?.filter((item) => item.to !== "/") || [];
 </script>
 

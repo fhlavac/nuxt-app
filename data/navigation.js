@@ -8,32 +8,26 @@ export const navigation = [
   {
     icon: "mdi-chart-bubble",
     title: "About",
-    to: "/about/intro",
+    description: "Lets find out some more",
+    to: "/about",
   },
   {
     icon: "mdi-folder-information-outline",
-    title: "Information",
-    to: "/information",
+    title: "Contact",
+    description: "Contact information",
+    to: "/contact",
   },
   {
     icon: "mdi-tent",
     title: "Residence",
+    description: "Where to reach?",
     to: "/residence",
   },
   {
     icon: "mdi-camera-outline",
     title: "Gallery",
+    description: "Gallery of sample images",
     to: "/gallery",
-  },
-  {
-    icon: "mdi-home-variant-outline",
-    title: "Shops",
-    to: "/shops",
-  },
-  {
-    icon: "mdi-school-outline",
-    title: "Products",
-    to: "/products",
   },
 ];
 

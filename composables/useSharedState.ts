@@ -3,12 +3,10 @@ import { useStateEffect } from "vue-use-state-effect";
 
 const sharedState = () => {
   const state = ref({
-    test: "🚀 Initial state value.",
+    navOpen: true,
   });
-  const updateState: () => void = () => {
-    state.value = {
-      test: "🌝 Updated state value.",
-    };
+  const updateState: (navOpen: boolean) => void = (navOpen) => {
+    state.value = { navOpen };
   };
   return {
     state,

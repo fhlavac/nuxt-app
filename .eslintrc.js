@@ -19,5 +19,6 @@ module.exports = {
   rules: {
     "vue/script-setup-uses-vars": "error",
     "vue/multi-word-component-names": "off",
+    "volar.inlayHints.eventArgumentInInlineHandlers": false,
   },
 };
