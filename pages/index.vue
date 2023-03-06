@@ -1,6 +1,15 @@
 <template>
   <Section>
     <SectionHeader class="mb-6" title="Welcome to the best Nuxt.js 3 app in the world!"/>
+    <v-alert
+    class="mb-6"
+      variant="outlined"
+      type="warning"
+      prominent
+      border="top"
+    >
+      This website is under construction, the content may not be accurate!
+    </v-alert>
     <p class="mb-4">Select section from our nav:</p>
     <v-container class="pa-0" fluid>
       <v-layout wrap >

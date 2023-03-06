@@ -16,6 +16,7 @@
         <v-icon>mdi-chevron-right</v-icon>
       </template>
     </v-breadcrumbs>
+    <v-divider/>
   </div>
 </template>
 

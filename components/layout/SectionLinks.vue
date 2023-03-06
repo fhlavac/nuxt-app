@@ -11,8 +11,8 @@
 
 <script setup>
 defineProps({
-  title: { type: String, reqired: true, default: "" },
-  links: { type: Array, reqired: true, default: () => [] },
+  title: { type: String, required: true,  },
+  links: { type: Array, required: true },
 });
 </script>
 

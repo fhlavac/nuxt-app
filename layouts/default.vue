@@ -44,13 +44,12 @@
         <slot />
       </v-container>
     </v-main>
-    <Footer :media="media" />
+    <Footer class="footer" :media="media" />
   </v-app>
 </template>
 
 <script setup lang="ts">
 import { media, navigation } from "../data/navigation";
-// import { computed } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
@@ -59,15 +58,9 @@ const route = useRoute();
 const {
   sharedState: { state, updateState },
 } = useSharedState();
-// const {
-//   sharedFetch: { loading, getCharacters },
-// } = useSharedFetch();
 
 const navOpen = computed(() => state.value.navOpen);
 
-// const goTo = (name: "destroy" | "keep") => {
-//   return router.push(`/${name}`);
-// };
 </script>
 
 <style>
@@ -77,5 +70,12 @@ const navOpen = computed(() => state.value.navOpen);
 
 .logo {
   font-family: "RalewayMedium";
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
 }
 </style>
