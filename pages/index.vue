@@ -1,6 +1,6 @@
 <template>
   <Section>
-    <SectionHeader class="mb-6" title="Welcome to the best Nuxt.js 3 app in the world!"/>
+    <SectionHeader class="mb-6" title="Welcome to my sample Nuxt.js 3 app!"/>
     <v-alert
     class="mb-6"
       variant="outlined"
@@ -10,7 +10,7 @@
     >
       This website is under construction, the content may not be accurate!
     </v-alert>
-    <p class="mb-4">Select section from our nav:</p>
+    <p class="mb-4">Select section from the nav:</p>
     <v-container class="pa-0" fluid>
       <v-layout wrap >
         <v-card
